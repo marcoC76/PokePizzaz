@@ -8,7 +8,7 @@ window.PizzaTypes = {
 
 window.Pizzas = {
   "s001": {
-    name: "Slice Samurai",
+    name: "Rebanada Samurai",
     description: "Pizza desc here",
     type: PizzaTypes.spicy,
     src: "/images/characters/pizzas/s001.png",
@@ -16,7 +16,7 @@ window.Pizzas = {
     actions: [ "saucyStatus", "clumsyStatus", "damage1" ],
   },
   "s002": {
-    name: "Bacon Brigade",
+    name: "Brigada tocino",
     description: "A salty warrior who fears nothing",
     type: PizzaTypes.spicy,
     src: "/images/characters/pizzas/s002.png",
@@ -24,7 +24,7 @@ window.Pizzas = {
     actions: [ "damage1", "saucyStatus", "clumsyStatus" ],
   },
   "v001": {
-    name: "Call Me Kale",
+    name: "Llamame Kale",
     description: "Pizza desc here",
     type: PizzaTypes.veggie,
     src: "/images/characters/pizzas/v001.png",
@@ -48,7 +48,7 @@ window.Pizzas = {
     actions: [ "damage1" ],
   },
   "f002": {
-    name: "Say Shitake",
+    name: "Dime Shitake",
     description: "Pizza desc here",
     type: PizzaTypes.fungi,
     src: "/images/characters/pizzas/f001.png",
