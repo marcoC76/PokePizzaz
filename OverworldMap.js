@@ -972,6 +972,32 @@ window.OverworldMaps = {
           }, ]
         }]
       }),
+      streetNorthNpcD: new Person({
+        x: utils.withGrid(6),
+        y: utils.withGrid(9),
+        src: "/images/characters/people/erio.png",
+        behaviorLoop: [{
+            type: "walk",
+            direction: "up",
+          },
+          {
+            type: "walk",
+            direction: "down",
+          },
+          {
+            type: "stand",
+            direction: "down",
+            time: 400,
+          },
+        ],
+        talking: [{
+          events: [{
+            type: "textMessage",
+            text: "¡Saca el bajon!",
+            faceHero: "streetNorthNpcD"
+          }, ]
+        }]
+      }),
       streetNorthNpcB: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(12),
