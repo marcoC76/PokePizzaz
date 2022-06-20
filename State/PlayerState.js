@@ -2,7 +2,7 @@ class PlayerState {
   constructor() {
     this.pizzas = {
       "p1": {
-        pizzaId: "s001",
+        pizzaId: "n001",
         hp: 50,
         maxHp: 50,
         xp: 0,

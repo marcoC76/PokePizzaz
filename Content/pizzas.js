@@ -29,7 +29,7 @@ window.Pizzas = {
     type: PizzaTypes.veggie,
     src: "/images/characters/pizzas/v001.png",
     icon: "/images/icons/veggie.png",
-    actions: [ "damage1" ],
+    actions: [ "damage1" , "clumsyStatus"],
   },
   "v002": {
     name: "Archie Artichoke",
@@ -37,7 +37,7 @@ window.Pizzas = {
     type: PizzaTypes.veggie,
     src: "/images/characters/pizzas/v001.png",
     icon: "/images/icons/veggie.png",
-    actions: [ "damage1" ],
+    actions: [ "damage1" , "saucyStatus"],
   },
   "f001": {
     name: "Portobello Express",
@@ -45,7 +45,7 @@ window.Pizzas = {
     type: PizzaTypes.fungi,
     src: "/images/characters/pizzas/f001.png",
     icon: "/images/icons/fungi.png",
-    actions: [ "damage1" ],
+    actions: [ "damage1" , "clumsyStatus"],
   },
   "f002": {
     name: "Dime Shitake",
@@ -53,6 +53,14 @@ window.Pizzas = {
     type: PizzaTypes.fungi,
     src: "/images/characters/pizzas/f001.png",
     icon: "/images/icons/fungi.png",
-    actions: [ "damage1" ],
+    actions: [ "damage1" , "saucyStatus"],
+  },
+  "n001": {
+    name: "Triple queso",
+    description: "Pizza con triple de queso normal",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n001.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "clumsyStatus"],
   }
 }

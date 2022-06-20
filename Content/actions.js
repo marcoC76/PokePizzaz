@@ -8,6 +8,15 @@ window.Actions = {
       { type: "stateChange", damage: 10}
     ]
   },
+  damage2: {
+    name: "Queso derretido",
+    description: "Ataca con queso caliente",
+    success: [
+      { type: "textMessage", text: "{CASTER} usa {ACTION}!"},
+      { type: "animation", animation: "spin"},
+      { type: "stateChange", damage: 7}
+    ]
+  },
   saucyStatus: {
     name: "Tomate apachurrado",
     description: "El poder de la salsa",
