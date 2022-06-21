@@ -1171,8 +1171,8 @@ window.OverworldMaps = {
         y: utils.withGrid(8),
       }),
       streetEsteNpcA: new Person({
-        x: utils.withGrid(9),
-        y: utils.withGrid(6),
+        x: utils.withGrid(12),
+        y: utils.withGrid(12),
         src: "/images/characters/people/npc15.png",
         behaviorLoop: [{
             type: "walk",
@@ -1235,44 +1235,36 @@ window.OverworldMaps = {
           }, ]
         }]
       }),
-      /* streetEsteNpcB: new Person({
-        x: utils.withGrid(4),
-        y: utils.withGrid(12),
-        src: "/images/characters/people/npc3.png",
-        behaviorLoop: [{
-            type: "stand",
-            direction: "up",
-            time: 400,
-          },
-          {
-            type: "stand",
-            direction: "left",
-            time: 800,
-          },
-          {
-            type: "stand",
-            direction: "down",
-            time: 400,
-          },
-          {
-            type: "stand",
-            direction: "left",
-            time: 800,
-          },
-          {
-            type: "stand",
-            direction: "right",
-            time: 800,
-          },
-        ],
+      streetEsteNpcC: new Person({
+        x: utils.withGrid(10),
+        y: utils.withGrid(10),
+        src: "/images/characters/people/npc8.png",
         talking: [{
-          events: [{
-            type: "textMessage",
-            text: "Que alguien termine de programar esta parte",
-            faceHero: "streetEsteNpcB"
-          }, ]
-        }]
-      }), */
+            required: ["streetEsteBattle"],
+            events: [{
+              type: "textMessage",
+              text: "¿Podrias ser menos brusco?",
+              faceHero: "streetEsteNpcC"
+            }, ]
+          },
+          {
+            events: [{
+                type: "textMessage",
+                text: "¡Fuera de mi zona!",
+                faceHero: "streetEsteNpcC"
+              },
+              {
+                type: "battle",
+                enemyId: "streetEsteBattle"
+              },
+              {
+                type: "addStoryFlag",
+                flag: "streetEsteBattle"
+              },
+            ]
+          },
+        ]
+      }),
       pizzaStone: new PizzaStone({
         x: utils.withGrid(2),
         y: utils.withGrid(9),
@@ -1294,17 +1286,20 @@ window.OverworldMaps = {
       [utils.asGridCoord(11, 6)]: true,
       [utils.asGridCoord(12, 6)]: true,
       [utils.asGridCoord(13, 6)]: true,
-      
-      [utils.asGridCoord(8, 8)]: true,
+
+
       [utils.asGridCoord(5, 7)]: true,
-      
+      [utils.asGridCoord(5, 10)]: true,
+      [utils.asGridCoord(5, 11)]: true,
+      [utils.asGridCoord(6, 11)]: true,
+      [utils.asGridCoord(5, 12)]: true,
+      [utils.asGridCoord(6, 12)]: true,
+      [utils.asGridCoord(9, 6)]: true,
+      [utils.asGridCoord(6, 10)]: true,
+
       [utils.asGridCoord(6, 7)]: true,
-      
-      [utils.asGridCoord(8, 9)]: true,
-      [utils.asGridCoord(7, 10)]: true,
-      [utils.asGridCoord(8, 10)]: true,
-      [utils.asGridCoord(9, 10)]: true,
-      [utils.asGridCoord(10, 10)]: true,
+      [utils.asGridCoord(7, 7)]: true,
+
       [utils.asGridCoord(2, 15)]: true,
       [utils.asGridCoord(3, 15)]: true,
       [utils.asGridCoord(4, 15)]: true,
@@ -1312,6 +1307,7 @@ window.OverworldMaps = {
       [utils.asGridCoord(6, 15)]: true,
       [utils.asGridCoord(6, 16)]: true,
       [utils.asGridCoord(8, 16)]: true,
+      [utils.asGridCoord(7, 15)]: true,
       [utils.asGridCoord(8, 15)]: true,
       [utils.asGridCoord(9, 15)]: true,
       [utils.asGridCoord(10, 15)]: true,
@@ -1321,6 +1317,7 @@ window.OverworldMaps = {
 
       [utils.asGridCoord(0, 7)]: true,
       [utils.asGridCoord(1, 7)]: true,
+      [utils.asGridCoord(8, 7)]: true,
       [utils.asGridCoord(0, 9)]: true,
       [utils.asGridCoord(1, 9)]: true,
       [utils.asGridCoord(1, 10)]: true,
@@ -1328,7 +1325,10 @@ window.OverworldMaps = {
       [utils.asGridCoord(1, 12)]: true,
       [utils.asGridCoord(1, 13)]: true,
       [utils.asGridCoord(1, 14)]: true,
+      [utils.asGridCoord(7, 12)]: true,
+      [utils.asGridCoord(8, 12)]: true,
 
+      [utils.asGridCoord(14, 7)]: true,
       [utils.asGridCoord(14, 8)]: true,
       [utils.asGridCoord(15, 8)]: true,
       [utils.asGridCoord(14, 9)]: true,
