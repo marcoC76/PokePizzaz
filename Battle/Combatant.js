@@ -87,9 +87,14 @@ class Combatant {
 
   getReplacedEvents(originalEvents) {
 
-    if (this.status?.type === "clumsy" && utils.randomFromArray([true, false, false])) {
+    if (this.status?.type === "clumsy" && utils.randomFromArray([true, false, false, true, true])) {
       return [
         { type: "textMessage", text: `${this.name} fracaso!` },
+      ]
+    }
+    if (this.status?.type === "cool" && utils.randomFromArray([true,true, true, true, true])) {
+      return [
+        { type: "textMessage", text: `${this.name} esta muy frio, no puede atacar!` },
       ]
     }
 

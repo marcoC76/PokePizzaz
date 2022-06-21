@@ -17,6 +17,15 @@ window.Actions = {
       { type: "stateChange", damage: 7}
     ]
   },
+  damage3: {
+    name: "Corte chueco",
+    description: "Utiliza el cortador de pizza para cortar mal a su oponente",
+    success: [
+      { type: "textMessage", text: "{CASTER} usa {ACTION}!"},
+      { type: "animation", animation: "spin"},
+      { type: "stateChange", damage: 15}
+    ]
+  },
   saucyStatus: {
     name: "Tomate apachurrado",
     description: "El poder de la salsa",
@@ -34,6 +43,16 @@ window.Actions = {
       { type: "animation", animation: "glob", color: "#dafd2a" },
       { type: "stateChange", status: { type: "clumsy", expiresIn: 3 } },
       { type: "textMessage", text: "{TARGET} esta girando al rededor!"},
+    ]
+  },
+  coolStatus: {
+    name: "Rebanda fria",
+    description: "Mantiene al oponente en el refri por 3 turnos",
+    success: [
+      { type: "textMessage", text: "{CASTER} usa {ACTION}!"},
+      { type: "animation", animation: "glob", color: "#59a1c0" },
+      { type: "stateChange", status: { type: "cool", expiresIn: 3 } },
+      { type: "textMessage", text: "{TARGET} se esta endireciendo por el frio!"},
     ]
   },
   //Items
