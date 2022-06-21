@@ -1341,14 +1341,14 @@ window.OverworldMaps = {
       [utils.asGridCoord(7, 17)]: true,
       [utils.asGridCoord(7, 4)]: true,
     },
-    /* cutsceneSpaces: {
-      [utils.asGridCoord(7, 5)]: [{
+    cutsceneSpaces: {
+      [utils.asGridCoord(0, 8)]: [{
         events: [{
           type: "changeMap",
-          map: "GreenKitchen",
-          x: utils.withGrid(5),
-          y: utils.withGrid(12),
-          direction: "up"
+          map: "StreetNorth",
+          x: utils.withGrid(15),
+          y: utils.withGrid(7),
+          direction: "left"
         }]
       }],
       [utils.asGridCoord(7, 16)]: [{
@@ -1360,7 +1360,7 @@ window.OverworldMaps = {
           direction: "down"
         }]
       }],
-    } */
+    }
   },
   DiningRoom: {
     id: "DiningRoom",
