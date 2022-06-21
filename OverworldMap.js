@@ -1151,6 +1151,234 @@ window.OverworldMaps = {
       }],
     }
   },
+  StreetEste: {
+    id: "StreetEste",
+    lowerSrc: "/images/maps/StreetEsteLower.png",
+    upperSrc: "/images/maps/StreetEsteUpper.png",
+    gameObjects: {
+      hero: new Person({
+        isPlayerControlled: true,
+        x: utils.withGrid(3),
+        y: utils.withGrid(8),
+      }),
+      streetNorthNpcA: new Person({
+        x: utils.withGrid(9),
+        y: utils.withGrid(6),
+        src: "/images/characters/people/npc1.png",
+        behaviorLoop: [{
+            type: "walk",
+            direction: "left",
+          },
+          {
+            type: "walk",
+            direction: "down",
+          },
+          {
+            type: "walk",
+            direction: "right",
+          },
+          {
+            type: "stand",
+            direction: "right",
+            time: 800,
+          },
+          {
+            type: "walk",
+            direction: "up",
+          },
+          {
+            type: "stand",
+            direction: "up",
+            time: 400,
+          },
+        ],
+        talking: [{
+          events: [{
+            type: "textMessage",
+            text: "¡Este lugar es famoso por las pizzas vegetarianas!",
+            faceHero: "streetNorthNpcA"
+          }, ]
+        }]
+      }),
+      streetNorthNpcD: new Person({
+        x: utils.withGrid(6),
+        y: utils.withGrid(9),
+        src: "/images/characters/people/erio.png",
+        behaviorLoop: [{
+            type: "walk",
+            direction: "up",
+          },
+          {
+            type: "walk",
+            direction: "down",
+          },
+          {
+            type: "stand",
+            direction: "down",
+            time: 400,
+          },
+        ],
+        talking: [{
+          events: [{
+            type: "textMessage",
+            text: "¡Saca el bajon!",
+            faceHero: "streetNorthNpcD"
+          }, ]
+        }]
+      }),
+      streetNorthNpcB: new Person({
+        x: utils.withGrid(4),
+        y: utils.withGrid(12),
+        src: "/images/characters/people/npc3.png",
+        behaviorLoop: [{
+            type: "stand",
+            direction: "up",
+            time: 400,
+          },
+          {
+            type: "stand",
+            direction: "left",
+            time: 800,
+          },
+          {
+            type: "stand",
+            direction: "down",
+            time: 400,
+          },
+          {
+            type: "stand",
+            direction: "left",
+            time: 800,
+          },
+          {
+            type: "stand",
+            direction: "right",
+            time: 800,
+          },
+        ],
+        talking: [{
+          events: [{
+            type: "textMessage",
+            text: "Me encanta el olor fresco del ajo en el aire.",
+            faceHero: "streetNorthNpcB"
+          }, ]
+        }]
+      }),
+      streetNorthNpcC: new Person({
+        x: utils.withGrid(12),
+        y: utils.withGrid(9),
+        src: "/images/characters/people/npc8.png",
+        talking: [{
+            required: ["streetNorthBattle"],
+            events: [{
+              type: "textMessage",
+              text: "¿Podrías ser el Legendario?",
+              faceHero: "streetNorthNpcC"
+            }, ]
+          },
+          {
+            events: [{
+                type: "textMessage",
+                text: "¡Este es mi territorio!",
+                faceHero: "streetNorthNpcC"
+              },
+              {
+                type: "battle",
+                enemyId: "streetNorthBattle"
+              },
+              {
+                type: "addStoryFlag",
+                flag: "streetNorthBattle"
+              },
+            ]
+          },
+        ]
+      }),
+      pizzaStone: new PizzaStone({
+        x: utils.withGrid(2),
+        y: utils.withGrid(9),
+        storyFlag: "STONE_STREET_NORTH",
+        pizzas: ["v001", "f001"],
+      }),
+
+    },
+    walls: {
+      [utils.asGridCoord(2, 7)]: true,
+      [utils.asGridCoord(3, 7)]: true,
+      [utils.asGridCoord(3, 6)]: true,
+      [utils.asGridCoord(4, 5)]: true,
+      [utils.asGridCoord(5, 5)]: true,
+      [utils.asGridCoord(6, 5)]: true,
+      [utils.asGridCoord(8, 5)]: true,
+      [utils.asGridCoord(9, 5)]: true,
+      [utils.asGridCoord(10, 5)]: true,
+      [utils.asGridCoord(11, 6)]: true,
+      [utils.asGridCoord(12, 6)]: true,
+      [utils.asGridCoord(13, 6)]: true,
+      [utils.asGridCoord(7, 8)]: true,
+      [utils.asGridCoord(8, 8)]: true,
+      [utils.asGridCoord(7, 9)]: true,
+      [utils.asGridCoord(8, 9)]: true,
+      [utils.asGridCoord(7, 10)]: true,
+      [utils.asGridCoord(8, 10)]: true,
+      [utils.asGridCoord(9, 10)]: true,
+      [utils.asGridCoord(10, 10)]: true,
+      [utils.asGridCoord(2, 15)]: true,
+      [utils.asGridCoord(3, 15)]: true,
+      [utils.asGridCoord(4, 15)]: true,
+      [utils.asGridCoord(5, 15)]: true,
+      [utils.asGridCoord(6, 15)]: true,
+      [utils.asGridCoord(6, 16)]: true,
+      [utils.asGridCoord(8, 16)]: true,
+      [utils.asGridCoord(8, 15)]: true,
+      [utils.asGridCoord(9, 15)]: true,
+      [utils.asGridCoord(10, 15)]: true,
+      [utils.asGridCoord(11, 15)]: true,
+      [utils.asGridCoord(12, 15)]: true,
+      [utils.asGridCoord(13, 15)]: true,
+
+      [utils.asGridCoord(1, 8)]: true,
+      [utils.asGridCoord(1, 9)]: true,
+      [utils.asGridCoord(1, 10)]: true,
+      [utils.asGridCoord(1, 11)]: true,
+      [utils.asGridCoord(1, 12)]: true,
+      [utils.asGridCoord(1, 13)]: true,
+      [utils.asGridCoord(1, 14)]: true,
+
+      //[utils.asGridCoord(14, 7)]: true,
+      [utils.asGridCoord(14, 8)]: true,
+      [utils.asGridCoord(15, 8)]: true,
+      [utils.asGridCoord(14, 9)]: true,
+      [utils.asGridCoord(14, 10)]: true,
+      [utils.asGridCoord(14, 11)]: true,
+      [utils.asGridCoord(14, 12)]: true,
+      [utils.asGridCoord(14, 13)]: true,
+      [utils.asGridCoord(14, 14)]: true,
+
+      [utils.asGridCoord(7, 17)]: true,
+      [utils.asGridCoord(7, 4)]: true,
+    },
+    cutsceneSpaces: {
+      [utils.asGridCoord(7, 5)]: [{
+        events: [{
+          type: "changeMap",
+          map: "GreenKitchen",
+          x: utils.withGrid(5),
+          y: utils.withGrid(12),
+          direction: "up"
+        }]
+      }],
+      [utils.asGridCoord(7, 16)]: [{
+        events: [{
+          type: "changeMap",
+          map: "Street",
+          x: utils.withGrid(25),
+          y: utils.withGrid(5),
+          direction: "down"
+        }]
+      }],
+    }
+  },
   DiningRoom: {
     id: "DiningRoom",
     lowerSrc: "/images/maps/DiningRoomLower.png",
