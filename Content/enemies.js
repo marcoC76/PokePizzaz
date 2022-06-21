@@ -49,6 +49,22 @@ window.Enemies = {
       }
     }
   },
+  "streetEsteBattle": {
+    name: "Pizza Thug",
+    src: "/images/characters/people/npc8.png",
+    pizzas: {
+      "a": {
+        pizzaId: "n001",
+        maxHp: 20,
+        level: 2,
+      },
+      "b": {
+        pizzaId: "f002",
+        maxHp: 30,
+        level: 2,
+      }
+    }
+  },
   "diningRoomBattle": {
     name: "Pizza Thug",
     src: "/images/characters/people/npc8.png",
