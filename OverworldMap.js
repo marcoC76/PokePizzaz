@@ -1294,9 +1294,12 @@ window.OverworldMaps = {
       [utils.asGridCoord(11, 6)]: true,
       [utils.asGridCoord(12, 6)]: true,
       [utils.asGridCoord(13, 6)]: true,
-      [utils.asGridCoord(7, 8)]: true,
+      
       [utils.asGridCoord(8, 8)]: true,
-      [utils.asGridCoord(7, 9)]: true,
+      [utils.asGridCoord(5, 7)]: true,
+      
+      [utils.asGridCoord(6, 7)]: true,
+      
       [utils.asGridCoord(8, 9)]: true,
       [utils.asGridCoord(7, 10)]: true,
       [utils.asGridCoord(8, 10)]: true,
@@ -1316,7 +1319,9 @@ window.OverworldMaps = {
       [utils.asGridCoord(12, 15)]: true,
       [utils.asGridCoord(13, 15)]: true,
 
-      [utils.asGridCoord(1, 8)]: true,
+      [utils.asGridCoord(0, 7)]: true,
+      [utils.asGridCoord(1, 7)]: true,
+      [utils.asGridCoord(0, 9)]: true,
       [utils.asGridCoord(1, 9)]: true,
       [utils.asGridCoord(1, 10)]: true,
       [utils.asGridCoord(1, 11)]: true,
@@ -1324,7 +1329,6 @@ window.OverworldMaps = {
       [utils.asGridCoord(1, 13)]: true,
       [utils.asGridCoord(1, 14)]: true,
 
-      //[utils.asGridCoord(14, 7)]: true,
       [utils.asGridCoord(14, 8)]: true,
       [utils.asGridCoord(15, 8)]: true,
       [utils.asGridCoord(14, 9)]: true,
