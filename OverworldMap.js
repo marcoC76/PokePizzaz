@@ -1140,6 +1140,15 @@ window.OverworldMaps = {
           direction: "up"
         }]
       }],
+      [utils.asGridCoord(15, 7)]: [{
+        events: [{
+          type: "changeMap",
+          map: "StreetEste",
+          x: utils.withGrid(0),
+          y: utils.withGrid(8),
+          direction: "right"
+        }]
+      }],
       [utils.asGridCoord(7, 16)]: [{
         events: [{
           type: "changeMap",
@@ -1161,10 +1170,10 @@ window.OverworldMaps = {
         x: utils.withGrid(3),
         y: utils.withGrid(8),
       }),
-      streetNorthNpcA: new Person({
+      streetEsteNpcA: new Person({
         x: utils.withGrid(9),
         y: utils.withGrid(6),
-        src: "/images/characters/people/npc1.png",
+        src: "/images/characters/people/npc15.png",
         behaviorLoop: [{
             type: "walk",
             direction: "left",
@@ -1195,15 +1204,15 @@ window.OverworldMaps = {
         talking: [{
           events: [{
             type: "textMessage",
-            text: "¡Este lugar es famoso por las pizzas vegetarianas!",
-            faceHero: "streetNorthNpcA"
+            text: "¡Aqui aun no hay nada!",
+            faceHero: "streetEsteNpcA"
           }, ]
         }]
       }),
-      streetNorthNpcD: new Person({
+      streetEsteNpcD: new Person({
         x: utils.withGrid(6),
         y: utils.withGrid(9),
-        src: "/images/characters/people/erio.png",
+        src: "/images/characters/people/hero2.png",
         behaviorLoop: [{
             type: "walk",
             direction: "up",
@@ -1221,12 +1230,12 @@ window.OverworldMaps = {
         talking: [{
           events: [{
             type: "textMessage",
-            text: "¡Saca el bajon!",
-            faceHero: "streetNorthNpcD"
+            text: "¡No han terminado este nivel!",
+            faceHero: "streetEsteNpcD"
           }, ]
         }]
       }),
-      streetNorthNpcB: new Person({
+      /* streetEsteNpcB: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(12),
         src: "/images/characters/people/npc3.png",
@@ -1259,46 +1268,16 @@ window.OverworldMaps = {
         talking: [{
           events: [{
             type: "textMessage",
-            text: "Me encanta el olor fresco del ajo en el aire.",
-            faceHero: "streetNorthNpcB"
+            text: "Que alguien termine de programar esta parte",
+            faceHero: "streetEsteNpcB"
           }, ]
         }]
-      }),
-      streetNorthNpcC: new Person({
-        x: utils.withGrid(12),
-        y: utils.withGrid(9),
-        src: "/images/characters/people/npc8.png",
-        talking: [{
-            required: ["streetNorthBattle"],
-            events: [{
-              type: "textMessage",
-              text: "¿Podrías ser el Legendario?",
-              faceHero: "streetNorthNpcC"
-            }, ]
-          },
-          {
-            events: [{
-                type: "textMessage",
-                text: "¡Este es mi territorio!",
-                faceHero: "streetNorthNpcC"
-              },
-              {
-                type: "battle",
-                enemyId: "streetNorthBattle"
-              },
-              {
-                type: "addStoryFlag",
-                flag: "streetNorthBattle"
-              },
-            ]
-          },
-        ]
-      }),
+      }), */
       pizzaStone: new PizzaStone({
         x: utils.withGrid(2),
         y: utils.withGrid(9),
-        storyFlag: "STONE_STREET_NORTH",
-        pizzas: ["v001", "f001"],
+        storyFlag: "STONE_STREET_ESTE",
+        pizzas: ["n001", "s001"],
       }),
 
     },
@@ -1358,7 +1337,7 @@ window.OverworldMaps = {
       [utils.asGridCoord(7, 17)]: true,
       [utils.asGridCoord(7, 4)]: true,
     },
-    cutsceneSpaces: {
+    /* cutsceneSpaces: {
       [utils.asGridCoord(7, 5)]: [{
         events: [{
           type: "changeMap",
@@ -1377,7 +1356,7 @@ window.OverworldMaps = {
           direction: "down"
         }]
       }],
-    }
+    } */
   },
   DiningRoom: {
     id: "DiningRoom",
