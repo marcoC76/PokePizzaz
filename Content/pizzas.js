@@ -62,5 +62,29 @@ window.Pizzas = {
     src: "/images/characters/pizzas/n001.png",
     icon: "/images/icons/normal.png",
     actions: [ "damage1" , "coolStatus", "saucyStatus"],
+  },
+  "n002": {
+    name: "Extravaganza",
+    description: "Pizza con con verdura y carne ",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n002.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "coolStatus", "saucyStatus"],
+  },
+  "n003": {
+    name: "Carnes frias",
+    description: "Pizza carnivora",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n003.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "clumsyStatus", "saucyStatus"],
+  },
+  "n004": {
+    name: "Portuguesa",
+    description: "Pizza con... Huevo?",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n004.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "coolStatus", "damage2"],
   }
 }
