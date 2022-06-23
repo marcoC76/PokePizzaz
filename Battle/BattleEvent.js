@@ -129,8 +129,9 @@ class BattleEvent {
         //Check if we've hit level up point
         if (combatant.xp === combatant.maxXp) {
           combatant.xp = 0;
-          combatant.maxXp = 100;
+          combatant.maxXp += 50;
           combatant.level += 1;
+          combatant.hp += 10;
         }
 
         combatant.update();

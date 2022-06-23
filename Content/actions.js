@@ -52,7 +52,7 @@ window.Actions = {
       { type: "textMessage", text: "{CASTER} usa {ACTION}!"},
       { type: "animation", animation: "glob", color: "#59a1c0" },
       { type: "stateChange", status: { type: "cool", expiresIn: 3 } },
-      { type: "textMessage", text: "{TARGET} se esta endireciendo por el frio!"},
+      { type: "textMessage", text: "{TARGET} se esta endureciendo por el frio!"},
     ]
   },
   //Items

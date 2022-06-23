@@ -77,7 +77,7 @@ window.Pizzas = {
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n003.png",
     icon: "/images/icons/normal.png",
-    actions: [ "damage1" , "clumsyStatus", "saucyStatus"],
+    actions: [ "damage3" , "clumsyStatus", "saucyStatus"],
   },
   "n004": {
     name: "Portuguesa",
