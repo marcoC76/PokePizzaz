@@ -35,6 +35,15 @@ window.Actions = {
       { type: "stateChange", damage: 12}
     ]
   },
+  damage5: {
+    name: "Corte",
+    description: "Lanza salsa extra picosa a su oponente",
+    success: [
+      { type: "textMessage", text: "{CASTER} usa {ACTION}!"},
+      { type: "animation",  animation: "cut", color: "#828282"},
+      { type: "stateChange", damage: 5}
+    ]
+  },
   saucyStatus: {
     name: "Tomate apachurrado",
     description: "El poder de la salsa",
