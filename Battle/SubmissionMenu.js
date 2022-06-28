@@ -123,9 +123,27 @@ class SubmissionMenu {
     })
   }
 
+  randomInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
   decide() {
     //TODO: Enemies should randomly decide what to do...
-    this.menuSubmit(Actions[ this.caster.actions[0]]);
+
+    var rndAction = this.randomInteger(0,3);
+    if (this.caster.actions[rndAction] === "undefined") {
+      rndAction = this.randomInteger(0,3);
+    }
+    console.log(this.caster.actions[rndAction]);
+    var slcAction = Math.random();
+    if (slcAction < 0.5){
+
+      slcAction = 0
+    }else{
+      slcAction= 1
+
+    }
+    this.menuSubmit(Actions[ this.caster.actions[slcAction]]);
   }
 
   showMenu(container) {

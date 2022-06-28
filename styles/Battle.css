@@ -160,15 +160,13 @@
 /*anim cut*/
 
 .cut-blob {
-  transform: rotate(-10deg);
+  
   position: absolute;
   width: 32px;
   height: 32px;
 }
 
-.flipHori {
-  transform: rotate(-10deg);
-}
+
 
 @keyframes battle-cut-right {
   0% {
@@ -193,7 +191,6 @@
 }
 
 .battle-cut-right {
-
   left: 70px;
   top: 104px;
   animation: battle-cut-right 1s forwards;
@@ -227,7 +224,6 @@
 }
 
 .battle-cut-left {
-
   left: 227px;
   top: 56px;
   animation: battle-cut-left 1s forwards;
