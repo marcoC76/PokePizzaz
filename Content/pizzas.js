@@ -1,9 +1,9 @@
 window.PizzaTypes = {
   normal: "normal",
-  spicy: "spicy",
-  veggie: "veggie",
-  fungi: "fungi",
-  chill: "chill",
+  spicy: "picosa",
+  veggie: "vegetariana",
+  fungi: "hongos",
+  chill: "fresco",
 }
 
 window.Pizzas = {
@@ -17,7 +17,7 @@ window.Pizzas = {
   },
   "s002": {
     name: "Brigada tocino",
-    description: "A salty warrior who fears nothing",
+    description: "Un guerrero salado que no teme a nada",
     type: PizzaTypes.spicy,
     src: "/images/characters/pizzas/s002.png",
     icon: "/images/icons/spicy.png",
@@ -57,7 +57,7 @@ window.Pizzas = {
   },
   "n001": {
     name: "Triple queso",
-    description: "Pizza con triple de queso normal",
+    description: "Guerrero con el triple de queso normal",
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n001.png",
     icon: "/images/icons/normal.png",
@@ -65,7 +65,7 @@ window.Pizzas = {
   },
   "n002": {
     name: "Extravaganza",
-    description: "Pizza con con verdura y carne ",
+    description: "Guerrero de verdura y carne ",
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n002.png",
     icon: "/images/icons/normal.png",
@@ -73,7 +73,7 @@ window.Pizzas = {
   },
   "n003": {
     name: "Carnes frias",
-    description: "Pizza carnivora",
+    description: "Guerrero carnivoro",
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n003.png",
     icon: "/images/icons/normal.png",
@@ -81,7 +81,7 @@ window.Pizzas = {
   },
   "n004": {
     name: "Portuguesa",
-    description: "Pizza con... Huevo?",
+    description: "Guerrer con... Huevo?",
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n004.png",
     icon: "/images/icons/normal.png",
