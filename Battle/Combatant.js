@@ -97,6 +97,7 @@ class Combatant {
         { type: "textMessage", text: `${this.name} esta muy frio, no puede atacar!` },
       ]
     }
+    
 
     return originalEvents;
   }
@@ -106,6 +107,12 @@ class Combatant {
       return [
         { type: "textMessage", text: "Se siente Ensalsado!" },
         { type: "stateChange", recover: 5, onCaster: true }
+      ]
+    } 
+    if (this.status?.type === "cortado") {
+      return [
+        { type: "textMessage", text: "Se siente Cortado!" },
+        { type: "stateChange", damageStatus: 5, onCaster: true }
       ]
     } 
     return [];
