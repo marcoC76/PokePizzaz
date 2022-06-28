@@ -112,7 +112,7 @@ class Combatant {
     if (this.status?.type === "cortado") {
       return [
         { type: "textMessage", text: "Se siente Cortado!" },
-        { type: "stateChange", damageStatus: 5, onCaster: true }
+        { type: "stateChange", damageStatus: 2, onCaster: true }
       ]
     } 
     return [];

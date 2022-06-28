@@ -125,7 +125,7 @@ class SubmissionMenu {
 
   decide() {
     //TODO: Enemies should randomly decide what to do...
-    this.menuSubmit(Actions[ this.caster.actions[0] ]);
+    this.menuSubmit(Actions[ this.caster.actions[0]]);
   }
 
   showMenu(container) {
