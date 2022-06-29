@@ -162,30 +162,30 @@
 .cut-blob {
   
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 8px;
+  height: 8px;
 }
 
 
 
 @keyframes battle-cut-right {
   0% {
-    transform: translate3d(0, 0, 0) scale(0.5);
+    transform: translate3d(0, 0, 0) scale(0.25);
     opacity: 1
   }
 
   50% {
-    transform: translate3d(10px, 0px, 0) scale(1);
+    transform: translate3d(10px, 0px, 0) scale(0.5);
     opacity: 1;
   }
 
   80% {
-    transform: translate3d(149px, -47px, 0) scale(1);
+    transform: translate3d(149px, -47px, 0) scale(0.25);
     opacity: 1
   }
 
   100% {
-    transform: translate3d(149px, -47px, 0) scale(3);
+    transform: translate3d(149px, -47px, 0) scale(0.125);
     opacity: 0
   }
 }
@@ -200,22 +200,22 @@
 @keyframes battle-cut-left {
   
   0% {
-    transform:  translate3d(0, 0, 0) scale(0.5);
+    transform:  translate3d(0, 0, 0) scale(0.25);
     opacity: 1
   }
 
   50% {
-    transform: translate3d(-10px, 0px, 0) scale(1);
+    transform: translate3d(-10px, 0px, 0) scale(0.5);
     opacity: 1;
   }
 
   80% {
-    transform: translate3d(-174px, 47px, 0) scale(1);
+    transform: translate3d(-174px, 47px, 0) scale(0.25);
     opacity: 1
   }
 
   100% {
-    transform: translate3d(-174px, 47px, 0) scale(3);
+    transform: translate3d(-174px, 47px, 0) scale(0.125);
     opacity: 0
   }
 }
