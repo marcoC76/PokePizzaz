@@ -131,10 +131,12 @@ class SubmissionMenu {
     //TODO: Enemies should randomly decide what to do...
 
     var rndAction = this.randomInteger(0,3);
-    if (this.caster.actions[rndAction] === "undefined") {
+    if (this.caster.actions[rndAction] === undefined) {
       rndAction = this.randomInteger(0,3);
+    }else{
+      console.log(this.caster.actions[rndAction]);
     }
-    console.log(this.caster.actions[rndAction]);
+    
     var slcAction = Math.random();
     if (slcAction < 0.5){
 
@@ -143,6 +145,7 @@ class SubmissionMenu {
       slcAction= 1
 
     }
+ /*  thids sort(function() { return Math.random() - 0.5 });*/
     this.menuSubmit(Actions[ this.caster.actions[slcAction]]);
   }
 
