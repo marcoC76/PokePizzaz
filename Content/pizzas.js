@@ -53,7 +53,7 @@ window.Pizzas = {
     type: PizzaTypes.fungi,
     src: "/images/characters/pizzas/f001.png",
     icon: "/images/icons/fungi.png",
-    actions: [ "damage5" , "saucyStatus"],
+    actions: [ "damage5" , "saucyStatus",],
   },
   "n001": {
     name: "Triple queso",
@@ -85,6 +85,6 @@ window.Pizzas = {
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n004.png",
     icon: "/images/icons/normal.png",
-    actions: [ "damage1" , "saucyStatus", "damage5"],
+    actions: [ "damage1" , "coolStatus", "damage5"],
   }
 }

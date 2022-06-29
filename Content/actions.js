@@ -159,7 +159,7 @@ window.Actions = {
       },
       {
         type: "animation",
-        animation: "glob",
+        animation: "globCool",
         color: "#59a1c0"
       },
       {
