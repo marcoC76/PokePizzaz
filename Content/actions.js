@@ -17,7 +17,7 @@ window.Actions = {
     ]
   },
   damage2: {
-    name: "Queso derretido",
+    name: "Queso caliente",
     description: "Ataca con queso caliente",
     success: [{
         type: "textMessage",
@@ -34,20 +34,29 @@ window.Actions = {
     ]
   },
   damage3: {
-    name: "Corte chueco",
-    description: "Utiliza el cortador de pizza para cortar mal a su oponente",
+    name: "Corte doble",
+    description: "Corta al oponenete en cuatro",
     success: [{
         type: "textMessage",
         text: "{CASTER} usa {ACTION}!"
       },
       {
         type: "animation",
-        animation: "spin"
+        animation: "cut",
+        color: "#828282"
       },
       {
         type: "stateChange",
-        damage: 15
-      }
+        damage: 10,
+        status: {
+          type: "cortado2",
+          expiresIn: 3
+        }
+      },
+      {
+        type: "textMessage",
+        text: "{TARGET} ha sido cortado en cuatro porciones!"
+      },
     ]
   },
   damage4: {
@@ -70,7 +79,7 @@ window.Actions = {
   },
   damage5: {
     name: "Corte",
-    description: "Lanza salsa extra picosa a su oponente",
+    description: "Corta al oponenete en dos",
     success: [{
         type: "textMessage",
         text: "{CASTER} usa {ACTION}!"
@@ -95,12 +104,17 @@ window.Actions = {
     ]
   },
   saucyStatus: {
-    name: "Tomate apachurrado",
-    description: "El poder de la salsa",
+    name: "Tomate machacado",
+    description: "Se baña en tomates machacados",
     targetType: "friendly",
     success: [{
         type: "textMessage",
         text: "{CASTER} usa {ACTION}!"
+      },
+      {
+        type: "animation",
+        animation: "globSelf",
+        color: "#ff6347"
       },
       {
         type: "stateChange",

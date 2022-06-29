@@ -85,6 +85,6 @@ window.Pizzas = {
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n004.png",
     icon: "/images/icons/normal.png",
-    actions: [ "damage1" , "coolStatus", "damage5"],
+    actions: [ "damage1" , "saucyStatus", "damage5"],
   }
 }

@@ -103,19 +103,29 @@ class Combatant {
   }
 
   getPostEvents() {
-    if (this.status?.type === "saucy") {
-      return [
-        { type: "textMessage", text: "Se siente Ensalsado!" },
-        { type: "stateChange", recover: 5, onCaster: true }
-      ]
-    } 
-    if (this.status?.type === "cortado") {
-      return [
-        { type: "textMessage", text: "Se siente Cortado!" },
-        { type: "stateChange", damageStatus: 2, onCaster: true }
-      ]
-    } 
-    return [];
+    
+      if (this.status?.type === "saucy") {
+        return [
+          { type: "textMessage", text: "Se siente Ensalsado!" },
+          { type: "stateChange", recover: 5, onCaster: true }
+        ]
+      } 
+      if (this.status?.type === "cortado") {
+        return [
+          { type: "textMessage", text: "Se siente Cortado!" },
+          { type: "stateChange", damageStatus: 2, onCaster: true }
+        ]
+      } 
+      if (this.status?.type === "cortado2") {
+        return [
+          { type: "textMessage", text: "Se siente Cortado!" },
+          { type: "stateChange", damageStatus: 4, onCaster: true }
+        ]
+      } 
+      return [];
+      
+    
+   
   }
 
   decrementStatus() {
