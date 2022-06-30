@@ -95,6 +95,8 @@
   animation: battle-spin-left 0.8s;
 }
 
+/* Glob anim */
+
 .glob-orb {
   position: absolute;
   width: 32px;
@@ -155,6 +157,195 @@
   left: 227px;
   top: 56px;
   animation: battle-glob-left 1s forwards;
+}
+/* GlobGotaAceite anim */
+
+.globGotaAceite-orb {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes battle-globGotaAceite-right {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.25);
+    opacity: 1
+  }
+
+  50% {
+    transform: translate3d(10px, -80px, 0) scale(0.5);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate3d(149px, -47px, 0) scale(0.25);
+    opacity: 1
+  }
+
+  100% {
+    transform: translate3d(149px, -47px, 0) scale(0.125);
+    opacity: 0
+  }
+}
+
+.battle-globGotaAceite-right {
+  left: 70px;
+  top: 104px;
+  animation: battle-globGotaAceite-right 1s forwards;
+}
+
+@keyframes battle-globGotaAceite-left {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.25);
+    opacity: 1
+  }
+
+  50% {
+    transform: translate3d(-10px, -50px, 0) scale(0.5);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate3d(-174px, 47px, 0) scale(0.25);
+    opacity: 1
+  }
+
+  100% {
+    transform: translate3d(-174px, 47px, 0) scale(0.125);
+    opacity: 0
+  }
+}
+
+.battle-globGotaAceite-left {
+  left: 227px;
+  top: 56px;
+  animation: battle-globGotaAceite-left 1s forwards;
+}
+/* globGotaTabasco anim */
+
+.globGotaTabasco-orb {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes battle-globGotaTabasco-right {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.25);
+    opacity: 1
+  }
+
+  50% {
+    transform: translate3d(10px, -80px, 0) scale(0.5);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate3d(149px, -47px, 0) scale(0.25);
+    opacity: 1
+  }
+
+  100% {
+    transform: translate3d(149px, -47px, 0) scale(0.125);
+    opacity: 0
+  }
+}
+
+.battle-globGotaTabasco-right {
+  left: 70px;
+  top: 104px;
+  animation: battle-globGotaTabasco-right 1s forwards;
+}
+
+@keyframes battle-globGotaTabasco-left {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.25);
+    opacity: 1
+  }
+
+  50% {
+    transform: translate3d(-10px, -50px, 0) scale(0.5);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate3d(-174px, 47px, 0) scale(0.25);
+    opacity: 1
+  }
+
+  100% {
+    transform: translate3d(-174px, 47px, 0) scale(0.125);
+    opacity: 0
+  }
+}
+
+.battle-globGotaTabasco-left {
+  left: 227px;
+  top: 56px;
+  animation: battle-globGotaTabasco-left 1s forwards;
+}
+/* globGotaAbanera anim */
+
+.globGotaAbanera-orb {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+
+@keyframes battle-globGotaAbanera-right {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.25);
+    opacity: 1
+  }
+
+  50% {
+    transform: translate3d(10px, -80px, 0) scale(0.5);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate3d(149px, -47px, 0) scale(0.25);
+    opacity: 1
+  }
+
+  100% {
+    transform: translate3d(149px, -47px, 0) scale(0.125);
+    opacity: 0
+  }
+}
+
+.battle-globGotaAbanera-right {
+  left: 70px;
+  top: 104px;
+  animation: battle-globGotaAbanera-right 1s forwards;
+}
+
+@keyframes battle-globGotaAbanera-left {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.25);
+    opacity: 1
+  }
+
+  50% {
+    transform: translate3d(-10px, -50px, 0) scale(0.5);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translate3d(-174px, 47px, 0) scale(0.25);
+    opacity: 1
+  }
+
+  100% {
+    transform: translate3d(-174px, 47px, 0) scale(0.125);
+    opacity: 0
+  }
+}
+
+.battle-globGotaAbanera-left {
+  left: 227px;
+  top: 56px;
+  animation: battle-globGotaAbanera-left 1s forwards;
 }
 
 /* globCool anim */

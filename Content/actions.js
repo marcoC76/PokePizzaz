@@ -68,12 +68,13 @@ window.Actions = {
       },
       {
         type: "animation",
-        animation: "glob",
-        color: "#b11506"
+        animation: "globGotaAbanera",
+        color: "#f48515",
+        colorShadow: "#cd6b0a"
       },
       {
         type: "stateChange",
-        damage: 12
+        damage: 16
       }
     ]
   },
@@ -101,6 +102,25 @@ window.Actions = {
         type: "textMessage",
         text: "{TARGET} ha sido cortado a la mitad!"
       },
+    ]
+  },
+  damage6: {
+    name: "Salsa Tabasco",
+    description: "Lanza salsa picosa a su oponente",
+    success: [{
+        type: "textMessage",
+        text: "{CASTER} usa {ACTION}!"
+      },
+      {
+        type: "animation",
+        animation: "globGotaTabasco",
+        color: "#b11506",
+        colorShadow: "#db1706"
+      },
+      {
+        type: "stateChange",
+        damage: 12
+      }
     ]
   },
   saucyStatus: {
@@ -134,8 +154,9 @@ window.Actions = {
       },
       {
         type: "animation",
-        animation: "glob",
-        color: "#dafd2a"
+        animation: "globGotaAceite",
+        color: "#dafd2a",
+        colorShadow: "#b3d40c"
       },
       {
         type: "stateChange",
@@ -160,7 +181,8 @@ window.Actions = {
       {
         type: "animation",
         animation: "globCool",
-        color: "#59a1c0"
+        color: "#59a1c0",
+        colorShadow: "#b8eaee"
       },
       {
         type: "stateChange",
