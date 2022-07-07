@@ -75,7 +75,7 @@ window.Pizzas = {
   },
   "n003": {
     name: "Carnes frias",
-    description: "Un guerrero carnivoro",
+    description: "Un guerrero carnivoro, cuidado con las mordidas",
     type: PizzaTypes.normal,
     src: "/images/characters/pizzas/n003.png",
     icon: "/images/icons/normal.png",
@@ -92,7 +92,7 @@ window.Pizzas = {
   "a001": {
     name: "Marina Camaron",
     description: "Si se duerme, lo vuelven pizza",
-    type: PizzaTypes.normal,
+    type: PizzaTypes.acua,
     src: "/images/characters/pizzas/a001.png",
     icon: "/images/icons/mariscos.png",
     actions: [ "damage1" , "coolStatus", "damage5"],
@@ -107,8 +107,8 @@ window.Pizzas = {
   },
   "m001": {
     name: "Clasica Peperoni",
-    description: "",
-    type: PizzaTypes.normal,
+    description: "Lanza rebanadas de peperoni, como si fuera tan barato...",
+    type: PizzaTypes.meat,
     src: "/images/characters/pizzas/m001.png",
     icon: "/images/icons/meat.png",
     actions: [ "damage1" , "coolStatus", "damage5"],
@@ -116,10 +116,18 @@ window.Pizzas = {
   "s002": {
     name: "Albondigas picantes",
     description: "Carne como pelotas y ademas pican!",
-    type: PizzaTypes.normal,
+    type: PizzaTypes.spicy,
     src: "/images/characters/pizzas/s004.png",
     icon: "/images/icons/meat.png",
     actions: [ "damage1" , "coolStatus", "damage6"],
+  },
+  "n006": {
+    name: "Margarita Clasica",
+    description: "Gran cantidad de masa, pero con la la orilla crugiente",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n006.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "coolStatus", "damage5"],
   },
   /* "": {
     name: "Napoleta",
@@ -129,14 +137,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Margarita",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n004.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "damage1" , "coolStatus", "damage5"],
-  },
+  
   
   "": {
     name: "Peperoni Perfecta",
