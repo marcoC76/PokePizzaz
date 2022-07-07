@@ -129,6 +129,14 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "damage1" , "coolStatus", "damage5"],
   },
+  "n007": {
+    name: "Hawaiana Clasica",
+    description: "La mayor aberracion o la mejor idea??",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n007.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "coolStatus", "damage5"],
+  },
   /* "": {
     name: "Napoleta",
     description: "?",
