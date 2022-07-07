@@ -113,6 +113,14 @@ window.Pizzas = {
     icon: "/images/icons/meat.png",
     actions: [ "damage1" , "coolStatus", "damage5"],
   },
+  "s002": {
+    name: "Albondigas picantes",
+    description: "Carne como pelotas y ademas pican!",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/s004.png",
+    icon: "/images/icons/meat.png",
+    actions: [ "damage1" , "coolStatus", "damage6"],
+  },
   /* "": {
     name: "Napoleta",
     description: "?",
@@ -282,14 +290,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Albondigas",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+  
   "": {
     name: "Vienesa",
     description: "?",
