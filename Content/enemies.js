@@ -82,11 +82,11 @@ window.Enemies = {
     }
   },
   "streetBattle": {
-    name: "Pizza Thug",
+    name: "Desafiante Pizzero",
     src: "/images/characters/people/npc8.png",
     pizzas: {
       "a": {
-        pizzaId: "f002",
+        pizzaId: "n008",
         maxHp: 50,
         level: 1,
       }

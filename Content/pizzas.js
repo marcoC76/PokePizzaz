@@ -7,7 +7,7 @@ window.PizzaTypes = {
   meat: "carne",
   acua: "mariscos",
 }
-
+/* Van 19 pizzas */
 window.Pizzas = {
   "s001": {
     name: "Rebanada Samurai",
@@ -137,6 +137,46 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "damage1" , "coolStatus", "damage5"],
   },
+  "n008": {
+    name: "Pastel de tomate",
+    description: "Solo es pan, tomate y ajonjoli...",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n008.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "coolStatus", "damage5"],
+  },
+  "n009": {
+    name: "Ricota espinaca",
+    description: "?",
+    type: PizzaTypes.normal,
+    src: "/images/characters/pizzas/n009.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "coolStatus", "damage5"],
+  },
+  "s005": {
+    name: "Mexicana",
+    description: "Esto pica y trae frijoles ",
+    type: PizzaTypes.spicy,
+    src: "/images/characters/pizzas/s005.png",
+    icon: "/images/icons/normal.png",
+    actions: [ "damage1" , "coolStatus", "damage6"],
+  },
+  "v004": {
+    name: "Espinaca Popeye",
+    description: "Puro y sano poder de la espinaca",
+    type: PizzaTypes.veggie,
+    src: "/images/characters/pizzas/v004.png",
+    icon: "/images/icons/veggie.png",
+    actions: [ "damage1" , "coolStatus", "damage5"],
+  },
+  "v005": {
+    name: "Col picante",
+    description: "?",
+    type: PizzaTypes.veggie,
+    src: "/images/characters/pizzas/v005.png",
+    icon: "/images/icons/veggie.png",
+    actions: [ "damage1" , "coolStatus", "damage5"],
+  },
   /* "": {
     name: "Napoleta",
     description: "?",
@@ -179,14 +219,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Hawaiana",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+
   "": {
     name: "Primavera",
     description: "?",
@@ -195,14 +228,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Blanca",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+
   "": {
     name: "Fruta del mar",
     description: "?",
@@ -259,14 +285,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Pastel de tomate",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+  
   "": {
     name: "Pesto Genovesa",
     description: "?",
@@ -291,14 +310,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Ricota espinaca",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+  
   
   "": {
     name: "Vienesa",
@@ -412,14 +424,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Mexicana",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+  
   "": {
     name: "Suculenta",
     description: "?",
@@ -476,22 +481,8 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Espinaca",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
-  "": {
-    name: "Col picante",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+  
+ 
   "": {
     name: "Jardin",
     description: "?",
@@ -508,14 +499,7 @@ window.Pizzas = {
     icon: "/images/icons/normal.png",
     actions: [ "" , "", ""],
   },
-  "": {
-    name: "Carne y cebolla",
-    description: "?",
-    type: PizzaTypes.normal,
-    src: "/images/characters/pizzas/n001.png",
-    icon: "/images/icons/normal.png",
-    actions: [ "" , "", ""],
-  },
+  
   "": {
     name: "Solo queso",
     description: "?",
