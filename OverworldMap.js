@@ -112,8 +112,8 @@ class OverworldMap {
 window.OverworldMaps = {
   DemoRoom: {
     id: "DemoRoom",
-    lowerSrc: "/images/maps/DemoLower.png",
-    upperSrc: "/images/maps/DemoUpper.png",
+    lowerSrc: "./images/maps/DemoLower.png",
+    upperSrc: "./images/maps/DemoUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -123,7 +123,7 @@ window.OverworldMaps = {
       npcC: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(8),
-        src: "/images/characters/people/npc1.png",
+        src: "./images/characters/people/npc1.png",
         behaviorLoop: [{
             type: "stand",
             direction: "left",
@@ -165,7 +165,7 @@ window.OverworldMaps = {
       npcB: new Person({
         x: utils.withGrid(8),
         y: utils.withGrid(5),
-        src: "/images/characters/people/erio.png",
+        src: "./images/characters/people/erio.png",
         talking: [{
           events: [{
               type: "textMessage",
@@ -191,7 +191,7 @@ window.OverworldMaps = {
         x: utils.withGrid(2),
         y: utils.withGrid(7),
         storyFlag: "USED_PIZZA_STONE",
-        pizzas: ["v001", "f001"],
+        pizzas: ["v001", "f001", "n009"],
       }),
     },
     walls: {
@@ -278,8 +278,8 @@ window.OverworldMaps = {
   },
   DemoRoom2: {
     id: "DemoRoom2",
-    lowerSrc: "/images/maps/DemoLower4.png",
-    upperSrc: "/images/maps/DemoUpper4.png",
+    lowerSrc: "./images/maps/DemoLower4.png",
+    upperSrc: "./images/maps/DemoUpper4.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -289,7 +289,7 @@ window.OverworldMaps = {
       npcC: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(8),
-        src: "/images/characters/people/npc1.png",
+        src: "./images/characters/people/npc1.png",
         behaviorLoop: [{
             type: "stand",
             direction: "left",
@@ -331,7 +331,7 @@ window.OverworldMaps = {
       npcB: new Person({
         x: utils.withGrid(8),
         y: utils.withGrid(5),
-        src: "/images/characters/people/erio.png",
+        src: "./images/characters/people/erio.png",
         talking: [{
           events: [{
               type: "textMessage",
@@ -357,7 +357,7 @@ window.OverworldMaps = {
         x: utils.withGrid(2),
         y: utils.withGrid(7),
         storyFlag: "USED_PIZZA_STONE",
-        pizzas: ["v001", "f001"],
+        pizzas: ["v001", "f001", "v002"],
       }),
     },
     walls: {
@@ -444,8 +444,8 @@ window.OverworldMaps = {
   },
   Kitchen: {
     id: "Kitchen",
-    lowerSrc: "/images/maps/KitchenLower.png",
-    upperSrc: "/images/maps/KitchenUpper.png",
+    lowerSrc: "./images/maps/KitchenLower.png",
+    upperSrc: "./images/maps/KitchenUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -456,7 +456,7 @@ window.OverworldMaps = {
         x: utils.withGrid(9),
         y: utils.withGrid(5),
         direction: "up",
-        src: "/images/characters/people/npc8.png",
+        src: "./images/characters/people/npc8.png",
         talking: [{
           events: [{
             type: "textMessage",
@@ -467,7 +467,7 @@ window.OverworldMaps = {
       kitchenNpcB: new Person({
         x: utils.withGrid(3),
         y: utils.withGrid(6),
-        src: "/images/characters/people/npc3.png",
+        src: "./images/characters/people/npc3.png",
         talking: [{
           events: [{
             type: "textMessage",
@@ -612,8 +612,8 @@ window.OverworldMaps = {
   },
   Street: {
     id: "Street",
-    lowerSrc: "/images/maps/StreetLower.png",
-    upperSrc: "/images/maps/StreetUpper.png",
+    lowerSrc: "./images/maps/StreetLower.png",
+    upperSrc: "./images/maps/StreetUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -623,7 +623,7 @@ window.OverworldMaps = {
       streetNpcA: new Person({
         x: utils.withGrid(9),
         y: utils.withGrid(11),
-        src: "/images/characters/people/npc2.png",
+        src: "./images/characters/people/npc2.png",
         behaviorLoop: [{
             type: "stand",
             direction: "right",
@@ -646,7 +646,7 @@ window.OverworldMaps = {
       streetNpcB: new Person({
         x: utils.withGrid(31),
         y: utils.withGrid(12),
-        src: "/images/characters/people/npc7.png",
+        src: "./images/characters/people/npc7.png",
         behaviorLoop: [{
             type: "stand",
             direction: "up",
@@ -684,7 +684,7 @@ window.OverworldMaps = {
       streetNpcC: new Person({
         x: utils.withGrid(22),
         y: utils.withGrid(10),
-        src: "/images/characters/people/npc8.png",
+        src: "./images/characters/people/npc8.png",
         talking: [{
             required: ["streetBattle"],
             events: [{
@@ -761,8 +761,8 @@ window.OverworldMaps = {
   },
   Shop: {
     id: "Shop",
-    lowerSrc: "/images/maps/PizzaShopLower.png",
-    upperSrc: "/images/maps/PizzaShopUpper.png",
+    lowerSrc: "./images/maps/PizzaShopLower.png",
+    upperSrc: "./images/maps/PizzaShopUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -772,7 +772,7 @@ window.OverworldMaps = {
       shopNpcA: new Person({
         x: utils.withGrid(6),
         y: utils.withGrid(5),
-        src: "/images/characters/people/erio.png",
+        src: "./images/characters/people/erio.png",
         talking: [{
           events: [{
             type: "textMessage",
@@ -784,7 +784,7 @@ window.OverworldMaps = {
       shopNpcB: new Person({
         x: utils.withGrid(5),
         y: utils.withGrid(9),
-        src: "/images/characters/people/npc2.png",
+        src: "./images/characters/people/npc2.png",
         behaviorLoop: [{
           type: "stand",
           direction: "left",
@@ -802,7 +802,7 @@ window.OverworldMaps = {
         x: utils.withGrid(1),
         y: utils.withGrid(4),
         storyFlag: "STONE_SHOP",
-        pizzas: ["v002", "f002"],
+        pizzas: ["v002", "f002", "a001"],
       }),
     },
     cutsceneSpaces: {
@@ -880,8 +880,8 @@ window.OverworldMaps = {
   },
   GreenKitchen: {
     id: "GreenKitchen",
-    lowerSrc: "/images/maps/GreenKitchenLower.png",
-    upperSrc: "/images/maps/GreenKitchenUpper.png",
+    lowerSrc: "./images/maps/GreenKitchenLower.png",
+    upperSrc: "./images/maps/GreenKitchenUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -891,7 +891,7 @@ window.OverworldMaps = {
       greenKitchenNpcA: new Person({
         x: utils.withGrid(8),
         y: utils.withGrid(8),
-        src: "/images/characters/people/npc2.png",
+        src: "./images/characters/people/npc2.png",
         behaviorLoop: [{
             type: "stand",
             direction: "up",
@@ -924,7 +924,7 @@ window.OverworldMaps = {
       greenKitchenNpcB: new Person({
         x: utils.withGrid(1),
         y: utils.withGrid(8),
-        src: "/images/characters/people/npc3.png",
+        src: "./images/characters/people/npc3.png",
         behaviorLoop: [{
             type: "stand",
             direction: "up",
@@ -983,7 +983,7 @@ window.OverworldMaps = {
       greenKitchenNpcC: new Person({
         x: utils.withGrid(3),
         y: utils.withGrid(5),
-        src: "/images/characters/people/secondBoss.png",
+        src: "./images/characters/people/secondBoss.png",
         talking: [{
             required: ["chefRootie"],
             events: [{
@@ -1073,8 +1073,8 @@ window.OverworldMaps = {
   },
   StreetNorth: {
     id: "StreetNorth",
-    lowerSrc: "/images/maps/StreetNorthLower.png",
-    upperSrc: "/images/maps/StreetNorthUpper.png",
+    lowerSrc: "./images/maps/StreetNorthLower.png",
+    upperSrc: "./images/maps/StreetNorthUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -1084,7 +1084,7 @@ window.OverworldMaps = {
       streetNorthNpcA: new Person({
         x: utils.withGrid(9),
         y: utils.withGrid(6),
-        src: "/images/characters/people/npc1.png",
+        src: "./images/characters/people/npc1.png",
         behaviorLoop: [{
             type: "walk",
             direction: "left",
@@ -1123,7 +1123,7 @@ window.OverworldMaps = {
       streetNorthNpcD: new Person({
         x: utils.withGrid(6),
         y: utils.withGrid(9),
-        src: "/images/characters/people/erio.png",
+        src: "./images/characters/people/erio.png",
         behaviorLoop: [{
             type: "walk",
             direction: "up",
@@ -1149,7 +1149,7 @@ window.OverworldMaps = {
       streetNorthNpcB: new Person({
         x: utils.withGrid(4),
         y: utils.withGrid(12),
-        src: "/images/characters/people/npc3.png",
+        src: "./images/characters/people/npc3.png",
         behaviorLoop: [{
             type: "stand",
             direction: "up",
@@ -1187,7 +1187,7 @@ window.OverworldMaps = {
       streetNorthNpcC: new Person({
         x: utils.withGrid(12),
         y: utils.withGrid(9),
-        src: "/images/characters/people/npc8.png",
+        src: "./images/characters/people/npc8.png",
         talking: [{
             required: ["streetNorthBattle"],
             events: [{
@@ -1218,7 +1218,7 @@ window.OverworldMaps = {
         x: utils.withGrid(2),
         y: utils.withGrid(9),
         storyFlag: "STONE_STREET_NORTH",
-        pizzas: ["v001", "f001"],
+        pizzas: ["v001", "f001", "n003"],
       }),
 
     },
@@ -1310,8 +1310,8 @@ window.OverworldMaps = {
   },
   StreetEste: {
     id: "StreetEste",
-    lowerSrc: "/images/maps/StreetEsteLower.png",
-    upperSrc: "/images/maps/StreetEsteUpper.png",
+    lowerSrc: "./images/maps/StreetEsteLower.png",
+    upperSrc: "./images/maps/StreetEsteUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -1321,7 +1321,7 @@ window.OverworldMaps = {
       streetEsteNpcA: new Person({
         x: utils.withGrid(12),
         y: utils.withGrid(12),
-        src: "/images/characters/people/npc15.png",
+        src: "./images/characters/people/npc15.png",
         behaviorLoop: [{
             type: "walk",
             direction: "left",
@@ -1360,7 +1360,7 @@ window.OverworldMaps = {
       streetEsteNpcD: new Person({
         x: utils.withGrid(6),
         y: utils.withGrid(9),
-        src: "/images/characters/people/hero2.png",
+        src: "./images/characters/people/hero2.png",
         behaviorLoop: [{
             type: "walk",
             direction: "up",
@@ -1386,7 +1386,7 @@ window.OverworldMaps = {
       streetEsteNpcC: new Person({
         x: utils.withGrid(10),
         y: utils.withGrid(10),
-        src: "/images/characters/people/npc8.png",
+        src: "./images/characters/people/npc8.png",
         talking: [{
             required: ["streetEsteBattle"],
             events: [{
@@ -1417,7 +1417,7 @@ window.OverworldMaps = {
         x: utils.withGrid(2),
         y: utils.withGrid(9),
         storyFlag: "STONE_STREET_ESTE",
-        pizzas: ["n001", "s001"],
+        pizzas: ["n001", "s001", "f003"],
       }),
 
     },
@@ -1521,8 +1521,8 @@ window.OverworldMaps = {
   },
   DiningRoom: {
     id: "DiningRoom",
-    lowerSrc: "/images/maps/DiningRoomLower.png",
-    upperSrc: "/images/maps/DiningRoomUpper.png",
+    lowerSrc: "./images/maps/DiningRoomLower.png",
+    upperSrc: "./images/maps/DiningRoomUpper.png",
     gameObjects: {
       hero: new Person({
         isPlayerControlled: true,
@@ -1532,7 +1532,7 @@ window.OverworldMaps = {
       diningRoomNpcA: new Person({
         x: utils.withGrid(12),
         y: utils.withGrid(8),
-        src: "/images/characters/people/npc8.png",
+        src: "./images/characters/people/npc8.png",
         talking: [{
             required: ["diningRoomBattle"],
             events: [{
@@ -1563,7 +1563,7 @@ window.OverworldMaps = {
       diningRoomNpcB: new Person({
         x: utils.withGrid(9),
         y: utils.withGrid(5),
-        src: "/images/characters/people/npc4.png",
+        src: "./images/characters/people/npc4.png",
         talking: [{
           events: [{
             type: "textMessage",
@@ -1575,7 +1575,7 @@ window.OverworldMaps = {
       diningRoomNpcC: new Person({
         x: utils.withGrid(2),
         y: utils.withGrid(8),
-        src: "/images/characters/people/npc7.png",
+        src: "./images/characters/people/npc7.png",
         behaviorLoop: [{
             type: "stand",
             direction: "right",
@@ -1603,7 +1603,7 @@ window.OverworldMaps = {
       diningRoomNpcD: new Person({
         x: utils.withGrid(8),
         y: utils.withGrid(9),
-        src: "/images/characters/people/npc1.png",
+        src: "./images/characters/people/npc1.png",
         behaviorLoop: [{
             type: "stand",
             direction: "right",
